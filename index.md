@@ -52,7 +52,9 @@ for the mathematically consistent formulation of an auxiliary task which is
 attempted to be solved by the neural network in order to facilitate
 backpropagation and enable the learning process.
 
-![](/content/stencil_search.mp4)
-<video width="320" height="240" controls>
-  <source type="video/mp4" src="/content/stencil_search.mp4">
-</video>)
+The ultimate goal is to reveal areas within the camera image which are most
+likely to be the source of electromagnetic reflections thus establishing a close
+correspondence between both modalities which can then be used further for
+safety-relevant applications downstream.
+
+![](/content/architecture.gif)
