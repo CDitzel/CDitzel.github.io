@@ -1,5 +1,5 @@
 
-# Crossmodal Self-supervised Learning with
+# Crossmodal Self-supervised Learning
 I am working in the area of applied self-supervised Deep Learning, a subfield within the
 ever so growing domain of artificial intelligence.
 
@@ -53,3 +53,6 @@ attempted to be solved by the neural network in order to facilitate
 backpropagation and enable the learning process.
 
 ![](/content/stencil_search.mp4)
+<video width="320" height="240" controls>
+  <source type="video/mp4" src="/content/stencil_search.mp4">
+</video>)
