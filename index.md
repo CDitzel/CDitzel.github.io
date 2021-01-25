@@ -12,6 +12,7 @@ capture their essence are error-prone and deprive the neural algorithms of the
 chance to find inherent patterns buried within the data.
 
 ![GitHub Logo](/content/boundingbox.png)
+*Annotating raw sensor data is reckless*
 Format: ![Alt Text](url)
 
 Not only will a human being inevitably make mistakes in annotating streams of
@@ -28,6 +29,18 @@ network is tasked with finding interesting properties and complex correlations
 withtin the data by itself without relying on predefied target specifications.
 
 ## Relying on raw sensor data
-There is yet another problem in using high-level and annotated data as input to
+There is yet another problem in using high-level annotated data as input to
 neural machines, namely the exclusion of vital and possibly valuable
-information.
+information. According to [information
+theory](https://en.wikipedia.org/wiki/Information_theory) special care has to be
+taken in order to avoid equivocation, i.e. the outflow of potentially essential
+knowlege by capturing the data as close to the respective sensor as
+possible.
+
+![GitHub Logo](/content/boundingbox.png)
+*Conditional entropy as defined in information theory*
+Format: ![Alt Text](https://en.wikipedia.org/wiki/Conditional_entropy)
+
+This allows to retain a maximum of information which otherwise would
+have been either altered or discarded altogether by subsequent steps along the
+individual sensor processing chain.
