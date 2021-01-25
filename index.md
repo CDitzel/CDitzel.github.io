@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/CDitzel/CDitzel.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+# Crossmodal Self-supervised Learning with
+I am working in the area of applied self-supervised Deep Learning, a subfield within the
+ever so growing domain of artificial intelligence.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## The need for annotation-free algorithms
+In many areas of application, labelled data is scarse to come by or virtually
+infeasible to obtain due to financial constraints and/or time
+limitations. Manual human-in-the-loop approaches in which highly-trained
+individuals highlight relevant properties within the input data trying to
+capture their essence are error-prone and deprive the neural algorithms of the
+chance to find inherent patterns buried within the data.
 
-### Markdown
+![GitHub Logo](/content/boundingbox.png)
+Format: ![Alt Text](url)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Not only will a human being inevitably make mistakes in annotating streams of
+data by hand, it also influences the subsequent methods by
+ introducing human
+biases thus steering the algorithm in a certain direction from the very beginning.
 
-```markdown
-Syntax highlighted code block
+Finally there is the financial aspect. Most companies and research facilities
+cannot afford to pay millions to employ an armada of experts to cumbersomely
+annotate plethora of data points.
 
-# Header 1
-## Header 2
-### Header 3
+The outlined problems necessitate a more natural approach in which the neural
+network is tasked with finding interesting properties and complex correlations
+withtin the data by itself without relying on predefied target specifications.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CDitzel/CDitzel.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Relying on raw sensor data
