@@ -28,3 +28,6 @@ network is tasked with finding interesting properties and complex correlations
 withtin the data by itself without relying on predefied target specifications.
 
 ## Relying on raw sensor data
+There is yet another problem in using high-level and annotated data as input to
+neural machines, namely the exclusion of vital and possibly valuable
+information.
