@@ -52,4 +52,4 @@ for the mathematically consistent formulation of an auxiliary task which is
 attempted to be solved by the neural network in order to facilitate
 backpropagation and enable the learning process.
 
-![](stencil_search.mp4)
+![](/content/stencil_search.mp4)
