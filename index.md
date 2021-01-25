@@ -37,7 +37,7 @@ taken in order to avoid equivocation, i.e. the outflow of potentially essential
 knowledge by capturing the data as close to the respective sensor as
 possible.
 
-![GitHub Logo](/content/equi.png)
+![GitHub Logo](/content/equi.png =250x20)
 *Important information must not be neglected*
 Format: ![Alt Text](https://en.wikipedia.org/wiki/Conditional_entropy)
 
@@ -58,3 +58,6 @@ correspondence between both modalities which can then be used further for
 safety-relevant applications downstream.
 
 ![](/content/architecture.gif)
+![](/content/data.gif)
+![](/content/res1.gif)
+![](/content/res3.gif)
