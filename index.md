@@ -58,6 +58,6 @@ correspondence between both modalities which can then be used further for
 safety-relevant applications downstream.
 
 ![](/content/architecture.gif)
-![](/content/data.gif)
+![](/content/data_repr.gif )
 ![](/content/res1.gif)
-![](/content/res3.gif)
+![](/content/res2.gif)
