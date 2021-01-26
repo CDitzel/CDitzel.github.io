@@ -37,7 +37,7 @@ taken in order to avoid equivocation, i.e. the outflow of potentially essential
 knowledge by capturing the data as close to the respective sensor as
 possible.
 
-![GitHub Logo](/content/equi.png =250x20)
+![GitHub Logo](/content/equi.png)
 *Important information must not be neglected*
 Format: ![Alt Text](https://en.wikipedia.org/wiki/Conditional_entropy)
 
@@ -45,12 +45,23 @@ This allows to retain a maximum of information which otherwise would
 have been either altered or discarded altogether by subsequent steps along the
 individual sensor processing chain.
 
+## Minimal processing of radar data retains valuable information
+
+
 ## Crossmodal correspondence learning
 The basic idea is to employ time-synchronized streams of two orthogonal sensor
-types and use one modality to supervise the other and vice versa. This allows
+types then use one modality to supervise the other and vice versa. This allows
 for the mathematically consistent formulation of an auxiliary task which is
 attempted to be solved by the neural network in order to facilitate
 backpropagation and enable the learning process.
+
+The network is presented with temporally aligned and misaligned pairs of camera
+and radar samples alternatingly. Upon transformation by means of two individual
+encoder blocks, it then tries to bring matching samples closer
+to each other in the high-dimensional embedding space, whereas the distance
+between disparate sample pairs is to be increased simultaneously. This causes
+the network to learn semantically meaningful representations of one and the same
+real-world scene originating from orthogonal physical measurement principles.
 
 The ultimate goal is to reveal areas within the camera image which are most
 likely to be the source of electromagnetic reflections thus establishing a close
