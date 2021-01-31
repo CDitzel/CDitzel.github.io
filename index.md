@@ -1,5 +1,5 @@
 
-# Crossmodal self-supervised learning
+# Crossmodal Self-supervised Learning
 I am working in the area of applied self-supervised Deep Learning, a subfield within the
 ever so growing domain of artificial intelligence.
 
