@@ -3,6 +3,13 @@
 I am working in the area of applied self-supervised Deep Learning, a subfield within the
 ever so growing domain of artificial intelligence.
 
+## Why radar matters
+Radar offers many key advantages for modern autonomous vehicles. Particularly in adverse weather or compromised environment conditions does radar exhibit invaluable properties. When cameras and Lidar fails, radar still provides reliable estimates of obstables in the systems field of view.
+
+![GitHub Logo](/content/fov.png)
+*Important information must not be neglected*
+Format: ![Alt Text](https://en.wikipedia.org/wiki/Conditional_entropy)
+
 ## The need for annotation-free algorithms
 In many areas of application, labelled data is scarce to come by or virtually
 infeasible to obtain due to financial constraints and/or time
@@ -55,6 +62,8 @@ for the mathematically consistent formulation of an auxiliary task which is
 attempted to be solved by the neural network in order to facilitate
 backpropagation and enable the learning process.
 
+![](/content/architecture.gif)
+
 The network is presented with temporally aligned and misaligned pairs of camera
 and radar samples alternatingly. Upon transformation by means of two individual
 encoder blocks, it then tries to bring matching samples closer
@@ -63,12 +72,14 @@ between disparate sample pairs is to be increased simultaneously. This causes
 the network to learn semantically meaningful representations of one and the same
 real-world scene originating from orthogonal physical measurement principles.
 
+![](/content/local_outside.png)
+
 The ultimate goal is to reveal areas within the camera image which are most
 likely to be the source of electromagnetic reflections thus establishing a close
 correspondence between both modalities which can then be used further for
 safety-relevant applications downstream.
 
-![](/content/architecture.gif)
+
 ![](/content/data_repr.gif )
 ![](/content/res1.gif)
 ![](/content/res2.gif)
