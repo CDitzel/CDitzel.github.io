@@ -6,9 +6,9 @@ ever so growing domain of artificial intelligence.
 ## Why radar matters
 Radar offers many key advantages for modern autonomous vehicles. Particularly in adverse weather or compromised environment conditions does radar exhibit invaluable properties. When cameras and Lidar fails, radar still provides reliable estimates of obstables in the systems field of view.
 
-![GitHub Logo](/content/fov.png)
-*Important information must not be neglected*
-Format: ![Alt Text](https://en.wikipedia.org/wiki/Conditional_entropy)
+![](/content/fov.png)
+*Radar offers complementary features to camera systems*
+
 
 ## The need for annotation-free algorithms
 In many areas of application, labelled data is scarce to come by or virtually
@@ -18,9 +18,8 @@ individuals highlight relevant properties within the input data trying to
 capture their essence are error-prone and deprive the neural algorithms of the
 chance to find inherent patterns buried within the data.
 
-![GitHub Logo](/content/boundingbox.png)
+![](/content/boundingbox.png)
 *Annotating raw sensor data is cost-intensive and time-consuming*
-Format: ![Alt Text](url)
 
 Not only will a human being inevitably make mistakes in annotating streams of
 data by hand, it also influences the subsequent methods by
@@ -45,15 +44,14 @@ knowledge by capturing the data as close to the respective sensor as
 possible.
 
 ![GitHub Logo](/content/equi.png)
-*Important information must not be neglected*
-Format: ![Alt Text](https://en.wikipedia.org/wiki/Conditional_entropy)
 
 This allows to retain a maximum of information which otherwise would
 have been either altered or discarded altogether by subsequent steps along the
 individual sensor processing chain.
 
 ## Minimal processing of radar data retains valuable information
-
+Only a minimum of preprocessing is performed on the data to retain as much information as possible inherent in the signals
+![](/content/data_repr.gif )
 
 ## Crossmodal correspondence learning
 The basic idea is to employ time-synchronized streams of two orthogonal sensor
@@ -79,7 +77,5 @@ likely to be the source of electromagnetic reflections thus establishing a close
 correspondence between both modalities which can then be used further for
 safety-relevant applications downstream.
 
-
-![](/content/data_repr.gif )
 ![](/content/res1.gif)
 ![](/content/res2.gif)
