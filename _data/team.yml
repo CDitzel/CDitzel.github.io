@@ -1,0 +1,26 @@
+# Project team members listed below will appear on the /team page
+
+- name: Carsten Ditzel
+  role: Research scientist
+  image: assets/img/picture.jpg
+  description: > # Can be Markdown
+    I was born in the former German capital Bonn, Germany, in 1986. After my
+    Abitur (High School diploma) in 2005, I worked for one year as a volunteer on the cancer ward of
+    the Asklepios children's hospital in Sankt Augustin, Germany. Afterwards I studied
+    mechatronic engineering and received the Diploma degree (equivalent to
+    M.Sc. degree) from the University of Applied Sciences Bonn-Rhein-Sieg,
+    Germany, in 2010. Having discovered my passion for mathematical simulation
+    and numerical optimization, I subsequently enrolled in a computational
+    engineering Masters's programme at the University of Hanover, Germany. In
+    2015 I graduated with honors and in 2016 became a research assistant and
+    Ph.D. candidate at the Institute of Measurement, Control and
+    Microtechnology, School of Engineering and Computer Science, at Ulm
+    University. Here my passion and focus of research is in the field of
+    low-level multimodal sensor fusion for the reliable environment perception
+    in adverse weather and compromised environmental circumstances.
+    Please find my [CV](assets/img/cv.pdf) here for reference and contact me for further information.
+  orcid: https://orcid.org/0000-0002-5977-4401
+  email: c.ditzel@gmail.com
+  github: CDitzel
+  twitter: CarstenDitzel
+  linkedin: in/carsten-ditzel
