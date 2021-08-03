@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/blog/2014/aaa/</loc>
+<lastmod>2014-04-01T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2020/reflecting/</loc>
+<lastmod>2020-10-18T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2021/genradar/</loc>
+<lastmod>2021-08-01T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/team/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/pages/about.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/img/aaa_paper_ditzel.pdf</loc>
+<lastmod>2021-08-02T17:42:32+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/img/cv.pdf</loc>
+<lastmod>2021-08-01T21:44:29+02:00</lastmod>
+</url>
+</urlset>

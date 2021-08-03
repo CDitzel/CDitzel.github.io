@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <title> - CDitzel.github.io</title>
+  
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- CSS -->
+  <!-- Bootstrap is included in main.css -->
+  <link rel="stylesheet" href="/assets/theme/css/main.css">
+  <link rel="stylesheet" href="/assets/theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/theme/css/pygments.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="CDitzel.github.io - RSS feed" href="http://localhost:4000/feed.xml" >
+</head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      
+      CDitzel.github.io
+    </a>
+
+ 
+            <li class="list-inline-item">
+              <a href="mailto:c.ditzel@gmail.com">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+	
+            <li class="list-inline-item">
+              <a href="https://linkedin.com/in/carsten-ditzel">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			
+
+ 
+            <li class="list-inline-item">
+              <a href="https://twitter.com/CarstenDitzel">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			
+
+
+          
+            <li class="list-inline-item">
+              <a href="https://github.com/CDitzel">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+        Menu <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ml-auto">
+        
+          
+            <li class="navbar-item">
+              <a class="nav-link" href="/" >Home</a>
+            </li>
+          
+        
+          
+            <li class="navbar-item">
+              <a class="nav-link" href="/blog/" >News</a>
+            </li>
+          
+        
+          
+            <li class="navbar-item">
+              <a class="nav-link" href="/team/" >Bio</a>
+            </li>
+          
+        
+        </ul>
+      </div>
+    
+  </div>
+</nav>
+
+
+    <main>
+      
+  <header class="jumbotron bg-image" style="background-image: url('/assets/img/refobjs-min.png')">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto">
+          <h1></h1>
+
+          <div class="lead"><p>Reflecting Objects: Which objects in the scene explain the radio frequency spectrum?</p>
+</div>
+
+          
+          <p class="meta">
+            <time>October 18, 2020</time>
+            
+              &bull; Carsten Ditzel
+            
+          </p>
+          
+
+          <div class="categories">
+            
+              
+              <a class="badge badge-pill" href="/blog/?category=Self-supervised+Learning">Self-supervised Learning</a>
+              
+              <a class="badge badge-pill" href="/blog/?category=Sensor+Fusion">Sensor Fusion</a>
+              
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+      <div class="container content">
+
+        <div class="row">
+  <div class="col-md-10 col-lg-8 mx-auto">
+
+    <h2 id="crossmodal-self-supervised-learning">Crossmodal Self-supervised Learning</h2>
+<p>I am working in the area of applied self-supervised Deep Learning, a subfield within the
+ever so growing domain of artificial intelligence.</p>
+
+<h3 id="why-radar-matters">Why radar matters</h3>
+<p>Radar offers many key advantages for modern autonomous vehicles. Particularly in adverse weather or compromised environment conditions does radar exhibit invaluable properties. When cameras and Lidar fails, radar still provides reliable estimates of obstables in the systems field of view.</p>
+
+<p><img src="/assets/img/fov.png" alt="" />
+<em>Radar offers complementary features to camera systems</em></p>
+
+<h3 id="the-need-for-annotation-free-algorithms">The need for annotation-free algorithms</h3>
+<p>In many areas of application, labelled data is scarce to come by or virtually
+infeasible to obtain due to financial constraints and/or time
+limitations. Manual human-in-the-loop approaches in which highly-trained
+individuals highlight relevant properties within the input data trying to
+capture their essence are error-prone and deprive the neural algorithms of the
+chance to find inherent patterns buried within the data.</p>
+
+<p><img src="/assets/img/boundingbox.png" alt="" />
+<em>Annotating raw sensor data is cost-intensive and time-consuming</em></p>
+
+<p>Not only will a human being inevitably make mistakes in annotating streams of
+data by hand, it also influences the subsequent methods by
+ introducing human
+biases thus steering the algorithm in a certain direction from the very beginning.</p>
+
+<p>Finally there is the financial aspect. Most companies and research facilities
+cannot afford to pay millions to employ an armada of experts to annotate
+plethora of data points.</p>
+
+<p>The outlined problems necessitate a more natural approach in which the neural
+network is tasked with finding interesting properties and complex correlations
+within the data by itself without relying on predefined target specifications.</p>
+
+<h3 id="relying-on-raw-sensor-data">Relying on raw sensor data</h3>
+<p>There is yet another problem in using high-level annotated data as input to
+neural machines, namely the exclusion of vital and possibly valuable
+information. According to <a href="https://en.wikipedia.org/wiki/Information_theory">information
+theory</a> special care has to be
+taken in order to avoid equivocation, i.e. the outflow of potentially essential
+knowledge by capturing the data as close to the respective sensor as
+possible.</p>
+
+<p><img src="/assets/img/equi.png" alt="" /></p>
+
+<p>This allows to retain a maximum of information which otherwise would
+have been either altered or discarded altogether by subsequent steps along the
+individual sensor processing chain.</p>
+
+<h3 id="minimal-processing-of-data-retains-valuable-information">Minimal processing of data retains valuable information</h3>
+<p>Only a minimum of preprocessing is performed on the data to retain as much information as possible inherent in the signals
+<img src="/assets/img/data_repr.gif" alt="" /></p>
+
+<h3 id="crossmodal-correspondence-learning">Crossmodal correspondence learning</h3>
+<p>The basic idea is to employ time-synchronized streams of two orthogonal sensor
+types then use one modality to supervise the other and vice versa. This allows
+for the mathematically consistent formulation of an auxiliary task which is
+attempted to be solved by the neural network in order to facilitate
+backpropagation and enable the learning process.</p>
+
+<p><img src="/assets/img/architecture.gif" alt="" /></p>
+
+<p>The network is presented with temporally aligned and misaligned pairs of camera
+and radar samples alternatingly. Upon transformation by means of two individual
+encoder blocks, it then tries to bring matching samples closer
+to each other in the high-dimensional embedding space, whereas the distance
+between disparate sample pairs is to be increased simultaneously. This causes
+the network to learn semantically meaningful representations of one and the same
+real-world scene originating from orthogonal physical measurement principles.</p>
+
+<p><img src="/assets/img/local_outside.png" alt="" /></p>
+
+<p>The ultimate goal is to reveal areas within the camera image which are most
+likely to be the source of electromagnetic reflections thus establishing a close
+correspondence between both modalities which can then be used further for
+safety-relevant applications downstream.</p>
+
+<p><img src="/assets/img/res1.gif" alt="" />
+<img src="/assets/img/res2.gif" alt="" /></p>
+
+
+  </div>
+</div>
+
+
+      </div>
+    </main>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+        <ul class="list-inline">
+          
+            <li class="list-inline-item">
+              <a href="mailto:c.ditzel@gmail.com">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+
+			
+            <li class="list-inline-item">
+              <a href="https://linkedin.com/in/carsten-ditzel">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			
+
+          
+            <li class="list-inline-item">
+              <a href="https://twitter.com/CarstenDitzel">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+			
+
+
+          
+            <li class="list-inline-item">
+              <a href="https://github.com/CDitzel">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+
+      
+    </div>
+
+    <div class="small mt-2">
+      
+      
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/theme/js/jquery.min.js"></script>
+<script src="/assets/theme/js/popper.min.js"></script>
+<script src="/assets/theme/js/bootstrap.min.js"></script>
+<script src="/assets/theme/js/anchor.min.js"></script>
+
+<script>
+  // Show anchors when hovering over headings, using anchor.js
+  (function () {
+    const headings = ".content h2[id], .content h3[id], .content h4[id], .content h5[id], .content h6[id]";
+    anchors.options = { placement: "right" };
+    anchors.add(headings);
+  })();
+</script>
+
+
+
+  </body>
+</html>

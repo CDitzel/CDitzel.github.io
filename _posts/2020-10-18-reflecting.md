@@ -1,9 +1,9 @@
 ---
 title: ""
 description: "Reflecting Objects: Which objects in the scene explain the radio frequency spectrum?"
-background: /assets/img/refobjs.png
+background: /assets/img/refobjs-min.png
 author: [Carsten Ditzel]
-categories: [Self-supervised Learning]
+categories: [Self-supervised Learning, Sensor Fusion]
 ---
 
 

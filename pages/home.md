@@ -14,4 +14,4 @@ My passion is in the field of self-learning neural systems applied to low-level
 sensor data. The basic idea is to let the algorithms find patterns and
 correlations without manual procesisng or human interference. This allows for
 the exploitation of an unprecedented amount of information and makes the environment
-perception for autonomous systems more reliable.
+perception for autonomous systems, especially in adverse environments, more reliable.

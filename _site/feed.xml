@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-03T09:54:16+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CDitzel.github.io</title><entry><title type="html"></title><link href="http://localhost:4000/blog/2021/genradar/" rel="alternate" type="text/html" title="" /><published>2021-08-01T00:00:00+02:00</published><updated>2021-08-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2021/genradar</id><content type="html" xml:base="http://localhost:4000/blog/2021/genradar/">&lt;p&gt;&lt;a href=&quot;https://cditzel.github.io/GenRadar/&quot;&gt;This publication shows a way to probabilistically construct camera views
+based on nothing but but synchronized radar data. This allows to maintain a
+clear and informative impression of the environment for the control of
+autonomous systems and offers interesting possibilities for both application and
+academia.&lt;/a&gt;&lt;/p&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Self-supervised Learning" /><category term="Sensor Fusion" /><summary type="html">This publication shows a way to probabilistically construct camera views based on nothing but but synchronized radar data. This allows to maintain a clear and informative impression of the environment for the control of autonomous systems and offers interesting possibilities for both application and academia.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2020/reflecting/" rel="alternate" type="text/html" title="" /><published>2020-10-18T00:00:00+02:00</published><updated>2020-10-18T00:00:00+02:00</updated><id>http://localhost:4000/blog/2020/reflecting</id><content type="html" xml:base="http://localhost:4000/blog/2020/reflecting/">&lt;h2 id=&quot;crossmodal-self-supervised-learning&quot;&gt;Crossmodal Self-supervised Learning&lt;/h2&gt;
+&lt;p&gt;I am working in the area of applied self-supervised Deep Learning, a subfield within the
+ever so growing domain of artificial intelligence.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-radar-matters&quot;&gt;Why radar matters&lt;/h3&gt;
+&lt;p&gt;Radar offers many key advantages for modern autonomous vehicles. Particularly in adverse weather or compromised environment conditions does radar exhibit invaluable properties. When cameras and Lidar fails, radar still provides reliable estimates of obstables in the systems field of view.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/fov.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Radar offers complementary features to camera systems&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-need-for-annotation-free-algorithms&quot;&gt;The need for annotation-free algorithms&lt;/h3&gt;
+&lt;p&gt;In many areas of application, labelled data is scarce to come by or virtually
+infeasible to obtain due to financial constraints and/or time
+limitations. Manual human-in-the-loop approaches in which highly-trained
+individuals highlight relevant properties within the input data trying to
+capture their essence are error-prone and deprive the neural algorithms of the
+chance to find inherent patterns buried within the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/boundingbox.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Annotating raw sensor data is cost-intensive and time-consuming&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Not only will a human being inevitably make mistakes in annotating streams of
+data by hand, it also influences the subsequent methods by
+ introducing human
+biases thus steering the algorithm in a certain direction from the very beginning.&lt;/p&gt;
+
+&lt;p&gt;Finally there is the financial aspect. Most companies and research facilities
+cannot afford to pay millions to employ an armada of experts to annotate
+plethora of data points.&lt;/p&gt;
+
+&lt;p&gt;The outlined problems necessitate a more natural approach in which the neural
+network is tasked with finding interesting properties and complex correlations
+within the data by itself without relying on predefined target specifications.&lt;/p&gt;
+
+&lt;h3 id=&quot;relying-on-raw-sensor-data&quot;&gt;Relying on raw sensor data&lt;/h3&gt;
+&lt;p&gt;There is yet another problem in using high-level annotated data as input to
+neural machines, namely the exclusion of vital and possibly valuable
+information. According to &lt;a href=&quot;https://en.wikipedia.org/wiki/Information_theory&quot;&gt;information
+theory&lt;/a&gt; special care has to be
+taken in order to avoid equivocation, i.e. the outflow of potentially essential
+knowledge by capturing the data as close to the respective sensor as
+possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/equi.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This allows to retain a maximum of information which otherwise would
+have been either altered or discarded altogether by subsequent steps along the
+individual sensor processing chain.&lt;/p&gt;
+
+&lt;h3 id=&quot;minimal-processing-of-data-retains-valuable-information&quot;&gt;Minimal processing of data retains valuable information&lt;/h3&gt;
+&lt;p&gt;Only a minimum of preprocessing is performed on the data to retain as much information as possible inherent in the signals
+&lt;img src=&quot;/assets/img/data_repr.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;crossmodal-correspondence-learning&quot;&gt;Crossmodal correspondence learning&lt;/h3&gt;
+&lt;p&gt;The basic idea is to employ time-synchronized streams of two orthogonal sensor
+types then use one modality to supervise the other and vice versa. This allows
+for the mathematically consistent formulation of an auxiliary task which is
+attempted to be solved by the neural network in order to facilitate
+backpropagation and enable the learning process.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/architecture.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The network is presented with temporally aligned and misaligned pairs of camera
+and radar samples alternatingly. Upon transformation by means of two individual
+encoder blocks, it then tries to bring matching samples closer
+to each other in the high-dimensional embedding space, whereas the distance
+between disparate sample pairs is to be increased simultaneously. This causes
+the network to learn semantically meaningful representations of one and the same
+real-world scene originating from orthogonal physical measurement principles.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/local_outside.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The ultimate goal is to reveal areas within the camera image which are most
+likely to be the source of electromagnetic reflections thus establishing a close
+correspondence between both modalities which can then be used further for
+safety-relevant applications downstream.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/res1.gif&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/img/res2.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Self-supervised Learning" /><category term="Sensor Fusion" /><summary type="html">Crossmodal Self-supervised Learning I am working in the area of applied self-supervised Deep Learning, a subfield within the ever so growing domain of artificial intelligence.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2014/aaa/" rel="alternate" type="text/html" title="" /><published>2014-04-01T00:00:00+02:00</published><updated>2014-04-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2014/aaa</id><content type="html" xml:base="http://localhost:4000/blog/2014/aaa/">&lt;p&gt;This publication is the result of a research semester of mine at the &lt;a href=&quot;https://www.kth.se/en&quot;&gt;Royal
+Institute of Technology (KTH)&lt;/a&gt; within the &lt;a href=&quot;https://www.hallf.kth.se/en&quot;&gt;Department of
+Solid Mechanics&lt;/a&gt; back in 2014. It deals with the
+numerical contact calculation of stent deployments for the treatment of
+Abdominal aortic aneurysm. Realistic computational simulations applied to the
+medical field, have the potential to circumvent dangerous in-vivo test runs and
+can exclude possible life-threatening risks from the start. You can find the
+paper &lt;a href=&quot;/assets/img/aaa_paper_ditzel.pdf&quot;&gt;here&lt;/a&gt;, alongside some Matlab code which
+was used to facilitate the simulations.&lt;/p&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Finite Element Method" /><category term="Contact Mechanics" /><summary type="html">This publication is the result of a research semester of mine at the Royal Institute of Technology (KTH) within the Department of Solid Mechanics back in 2014. It deals with the numerical contact calculation of stent deployments for the treatment of Abdominal aortic aneurysm. Realistic computational simulations applied to the medical field, have the potential to circumvent dangerous in-vivo test runs and can exclude possible life-threatening risks from the start. You can find the paper here, alongside some Matlab code which was used to facilitate the simulations.</summary></entry></feed>
