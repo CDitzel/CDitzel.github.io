@@ -114,19 +114,19 @@
 
     <main>
       
-  <header class="jumbotron bg-image" style="background-image: url('/assets/img/banner-min.png')">
+  <header class="jumbotron bg-image" style="background-image: url('/assets/img/seg.png')">
 
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto">
           <h1></h1>
 
-          <div class="lead"><p>GenRadar: Self-supervised Probabilistic Camera Synthesis based on Radar Frequencies</p>
+          <div class="lead"><p>The ADUULM-Dataset - A Semantic Segmentation Dataset for Sensor Fusion</p>
 </div>
 
           
           <p class="meta">
-            <time>August 01, 2021</time>
+            <time>February 19, 2021</time>
             
               &bull; Carsten Ditzel
             
@@ -136,9 +136,9 @@
           <div class="categories">
             
               
-              <a class="badge badge-pill" href="/blog/?category=Self-supervised+Learning">Self-supervised Learning</a>
-              
               <a class="badge badge-pill" href="/blog/?category=Sensor+Fusion">Sensor Fusion</a>
+              
+              <a class="badge badge-pill" href="/blog/?category=Semantic+Segmentation">Semantic Segmentation</a>
               
             
           </div>
@@ -153,21 +153,49 @@
         <div class="row">
   <div class="col-md-10 col-lg-8 mx-auto">
 
-    <p><a href="https://cditzel.github.io/GenRadar/">This publication shows a way to probabilistically construct camera views
-based on nothing but but synchronized radar data. This allows to maintain a
-clear and informative impression of the environment for the control of
-autonomous systems and offers interesting possibilities for both application and
-academia.</a></p>
+    <p>This <a href="https://www.bmvc2020-conference.com/assets/papers/0474.pdf">BMVC publication</a>
+of my colleagues and me attempts to close the gap that existed for annotated
+datasets in the context of autonomous driving in adverse weather and compromised
+lighting. It features multitudes of challenging real-world driving scenarios in
+and around the city of Ulm-Germany and was recorded during the course of several
+seasons. It includes sequences with heavy fog, snow rain and also captures
+various lighting conditions which are challenging for modern vehicular sensor
+setups such as glaring and blooming effects as well as recordings at different
+daylight conditions. The annotations comprise 12 semantic classes (car, truck,
+bus, motorbike, pedestrian, bicyclist, traffic-sign, traffic-light, road,
+sidewalk, pole, unlabeled) and can be used for both semantic segmentation
+approaches as well as free-space detection methods.</p>
 
-<p>If you intend to cite the paper, please use the following Bibtex entry</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@misc{ditzel2021genradar,
-      title={GenRadar: Self-supervised Probabilistic Camera Synthesis based on Radar Frequencies},
-      author={Carsten Ditzel and Klaus Dietmayer},
-      year={2021},
-      eprint={2107.08948},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+<p>Sensor setup:</p>
+<ul>
+  <li>Camera (telephoto lens, wide-angle lens),</li>
+  <li>Lidars (16/32 lines),</li>
+  <li>Stereo Camera footage,</li>
+  <li>GPS data,</li>
+  <li>IMU recordings</li>
+</ul>
+
+<p>Please find further detailed information of this amazing work of my office mate
+<a href="https://github.com/Andreas-Pfeuffer">Andreas</a> and colleague
+<a href="https://www.uni-ulm.de/in/mrm/institut/mitarbeiter/wissenschaftliche-mitarbeiter/schoen-markus-m-sc/">Markus</a>
+and download links on the <a href="https://www.uni-ulm.de/in/iui-drive-u/projekte/aduulm-dataset/">project page of out
+department</a> and
+<a href="https://github.com/uulm-mrm/aduulm_dataset_tools">github</a>.</p>
+
+<p><img src="/assets/img/sensor_setup_susi.png" alt="" />
+<em>Sensor setup on the autonomous recording vehicle used to record the ADUULM dataset</em></p>
+
+<p><br />
+If you intend to cite the paper, please use the following Bibtex entry</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> @InProceedings{Pfeuffer_2020_TheADUULM-Dataset,
+    Title = {The ADUULM-Dataset - A Semantic Segmentation Dataset for Sensor Fusion},
+    Author = {Pfeuffer, Andreas and Sch{\"o}n, Markus and Ditzel, Carsten and Dietmayer, Klaus},
+    Booktitle= {31th British Machine Vision Conference 2020, {BMVC} 2020, Manchester, UK, September 7-10, 2020},
+    Year= {2020},
+    Publisher= {BMVA Press}
 }
+
 </code></pre></div></div>
 
 

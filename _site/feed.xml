@@ -1,8 +1,62 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-03T09:54:16+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CDitzel.github.io</title><entry><title type="html"></title><link href="http://localhost:4000/blog/2021/genradar/" rel="alternate" type="text/html" title="" /><published>2021-08-01T00:00:00+02:00</published><updated>2021-08-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2021/genradar</id><content type="html" xml:base="http://localhost:4000/blog/2021/genradar/">&lt;p&gt;&lt;a href=&quot;https://cditzel.github.io/GenRadar/&quot;&gt;This publication shows a way to probabilistically construct camera views
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-08-03T19:06:57+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CDitzel.github.io</title><entry><title type="html"></title><link href="http://localhost:4000/blog/2021/genradar/" rel="alternate" type="text/html" title="" /><published>2021-08-01T00:00:00+02:00</published><updated>2021-08-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2021/genradar</id><content type="html" xml:base="http://localhost:4000/blog/2021/genradar/">&lt;p&gt;&lt;a href=&quot;https://cditzel.github.io/GenRadar/&quot;&gt;This publication shows a way to probabilistically construct camera views
 based on nothing but but synchronized radar data. This allows to maintain a
 clear and informative impression of the environment for the control of
 autonomous systems and offers interesting possibilities for both application and
-academia.&lt;/a&gt;&lt;/p&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Self-supervised Learning" /><category term="Sensor Fusion" /><summary type="html">This publication shows a way to probabilistically construct camera views based on nothing but but synchronized radar data. This allows to maintain a clear and informative impression of the environment for the control of autonomous systems and offers interesting possibilities for both application and academia.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2020/reflecting/" rel="alternate" type="text/html" title="" /><published>2020-10-18T00:00:00+02:00</published><updated>2020-10-18T00:00:00+02:00</updated><id>http://localhost:4000/blog/2020/reflecting</id><content type="html" xml:base="http://localhost:4000/blog/2020/reflecting/">&lt;h2 id=&quot;crossmodal-self-supervised-learning&quot;&gt;Crossmodal Self-supervised Learning&lt;/h2&gt;
+academia.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you intend to cite the paper, please use the following Bibtex entry&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@misc{ditzel2021genradar,
+      title={GenRadar: Self-supervised Probabilistic Camera Synthesis based on Radar Frequencies},
+      author={Carsten Ditzel and Klaus Dietmayer},
+      year={2021},
+      eprint={2107.08948},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Self-supervised Learning" /><category term="Sensor Fusion" /><summary type="html">This publication shows a way to probabilistically construct camera views based on nothing but but synchronized radar data. This allows to maintain a clear and informative impression of the environment for the control of autonomous systems and offers interesting possibilities for both application and academia.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2021/aduulm/" rel="alternate" type="text/html" title="" /><published>2021-02-19T00:00:00+01:00</published><updated>2021-02-19T00:00:00+01:00</updated><id>http://localhost:4000/blog/2021/aduulm</id><content type="html" xml:base="http://localhost:4000/blog/2021/aduulm/">&lt;p&gt;This &lt;a href=&quot;https://www.bmvc2020-conference.com/assets/papers/0474.pdf&quot;&gt;BMVC publication&lt;/a&gt;
+of my colleagues and me attempts to close the gap that existed for annotated
+datasets in the context of autonomous driving in adverse weather and compromised
+lighting. It features multitudes of challenging real-world driving scenarios in
+and around the city of Ulm-Germany and was recorded during the course of several
+seasons. It includes sequences with heavy fog, snow rain and also captures
+various lighting conditions which are challenging for modern vehicular sensor
+setups such as glaring and blooming effects as well as recordings at different
+daylight conditions. The annotations comprise 12 semantic classes (car, truck,
+bus, motorbike, pedestrian, bicyclist, traffic-sign, traffic-light, road,
+sidewalk, pole, unlabeled) and can be used for both semantic segmentation
+approaches as well as free-space detection methods.&lt;/p&gt;
+
+&lt;p&gt;Sensor setup:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Camera (telephoto lens, wide-angle lens),&lt;/li&gt;
+  &lt;li&gt;Lidars (16/32 lines),&lt;/li&gt;
+  &lt;li&gt;Stereo Camera footage,&lt;/li&gt;
+  &lt;li&gt;GPS data,&lt;/li&gt;
+  &lt;li&gt;IMU recordings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Please find further detailed information of this amazing work of my office mate
+&lt;a href=&quot;https://github.com/Andreas-Pfeuffer&quot;&gt;Andreas&lt;/a&gt; and colleague
+&lt;a href=&quot;https://www.uni-ulm.de/in/mrm/institut/mitarbeiter/wissenschaftliche-mitarbeiter/schoen-markus-m-sc/&quot;&gt;Markus&lt;/a&gt;
+and download links on the &lt;a href=&quot;https://www.uni-ulm.de/in/iui-drive-u/projekte/aduulm-dataset/&quot;&gt;project page of out
+department&lt;/a&gt; and
+&lt;a href=&quot;https://github.com/uulm-mrm/aduulm_dataset_tools&quot;&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/sensor_setup_susi.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Sensor setup on the autonomous recording vehicle used to record the ADUULM dataset&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+If you intend to cite the paper, please use the following Bibtex entry&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; @InProceedings{Pfeuffer_2020_TheADUULM-Dataset,
+    Title = {The ADUULM-Dataset - A Semantic Segmentation Dataset for Sensor Fusion},
+    Author = {Pfeuffer, Andreas and Sch{\&quot;o}n, Markus and Ditzel, Carsten and Dietmayer, Klaus},
+    Booktitle= {31th British Machine Vision Conference 2020, {BMVC} 2020, Manchester, UK, September 7-10, 2020},
+    Year= {2020},
+    Publisher= {BMVA Press}
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Sensor Fusion" /><category term="Semantic Segmentation" /><summary type="html">This BMVC publication of my colleagues and me attempts to close the gap that existed for annotated datasets in the context of autonomous driving in adverse weather and compromised lighting. It features multitudes of challenging real-world driving scenarios in and around the city of Ulm-Germany and was recorded during the course of several seasons. It includes sequences with heavy fog, snow rain and also captures various lighting conditions which are challenging for modern vehicular sensor setups such as glaring and blooming effects as well as recordings at different daylight conditions. The annotations comprise 12 semantic classes (car, truck, bus, motorbike, pedestrian, bicyclist, traffic-sign, traffic-light, road, sidewalk, pole, unlabeled) and can be used for both semantic segmentation approaches as well as free-space detection methods.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2020/reflecting/" rel="alternate" type="text/html" title="" /><published>2020-10-18T00:00:00+02:00</published><updated>2020-10-18T00:00:00+02:00</updated><id>http://localhost:4000/blog/2020/reflecting</id><content type="html" xml:base="http://localhost:4000/blog/2020/reflecting/">&lt;h2 id=&quot;crossmodal-self-supervised-learning&quot;&gt;Crossmodal Self-supervised Learning&lt;/h2&gt;
 &lt;p&gt;I am working in the area of applied self-supervised Deep Learning, a subfield within the
 ever so growing domain of artificial intelligence.&lt;/p&gt;
 
@@ -28,7 +82,7 @@ data by hand, it also influences the subsequent methods by
  introducing human
 biases thus steering the algorithm in a certain direction from the very beginning.&lt;/p&gt;
 
-&lt;p&gt;Finally there is the financial aspect. Most companies and research facilities
+&lt;p&gt;Finally there is the financial aspectg. Most companies and research facilities
 cannot afford to pay millions to employ an armada of experts to annotate
 plethora of data points.&lt;/p&gt;
 
@@ -80,7 +134,25 @@ correspondence between both modalities which can then be used further for
 safety-relevant applications downstream.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/res1.gif&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/img/res2.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Self-supervised Learning" /><category term="Sensor Fusion" /><summary type="html">Crossmodal Self-supervised Learning I am working in the area of applied self-supervised Deep Learning, a subfield within the ever so growing domain of artificial intelligence.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2014/aaa/" rel="alternate" type="text/html" title="" /><published>2014-04-01T00:00:00+02:00</published><updated>2014-04-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2014/aaa</id><content type="html" xml:base="http://localhost:4000/blog/2014/aaa/">&lt;p&gt;This publication is the result of a research semester of mine at the &lt;a href=&quot;https://www.kth.se/en&quot;&gt;Royal
+&lt;img src=&quot;/assets/img/res2.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Self-supervised Learning" /><category term="Sensor Fusion" /><summary type="html">Crossmodal Self-supervised Learning I am working in the area of applied self-supervised Deep Learning, a subfield within the ever so growing domain of artificial intelligence.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2018/labeltool/" rel="alternate" type="text/html" title="" /><published>2018-10-10T00:00:00+02:00</published><updated>2018-10-10T00:00:00+02:00</updated><id>http://localhost:4000/blog/2018/labeltool</id><content type="html" xml:base="http://localhost:4000/blog/2018/labeltool/">&lt;p&gt;The vast majority of the annotated datasets used in research and academia lacks
+any labeled radar data. Some collections include automotive radar information
+but those are usually represented on a high-level by sparse point clouds, having
+lost valuable information by preprocessing steps. This
+&lt;a href=&quot;https://github.com/CDitzel/tesseract&quot;&gt;application&lt;/a&gt;, written in modern C++,
+OpenGL and Qt marks the attempt to classify low-level radar data in a similar
+fashion to Lidar and Camera images. After semi-automatic projection of the Lidar
+points into the camera image and assignment of the corresponding semantic
+classes, those points vertical projection if used to assign unique class labels
+to each range-azimuth cell of the radar cone. This work is by no means finished,
+as it turned out that annotating radar frequency plots is far more involved than
+initially anticipated. Also, the field of self-supervised learning seems to be a
+more natural fire for domains in which labeled data are scarce or just hard to
+come by. Nonetheless, the project contains many valid assumptions and showcases
+a systematic approach how to obtain annotated radar plots for the purpose of
+using them in the field of supevised learning.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/labeltool2.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;Labeltool used to annotate real-world automotive radar frequency information&lt;/em&gt;&lt;/p&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Sensor Fusion" /><category term="Semantic Segmentation" /><summary type="html">The vast majority of the annotated datasets used in research and academia lacks any labeled radar data. Some collections include automotive radar information but those are usually represented on a high-level by sparse point clouds, having lost valuable information by preprocessing steps. This application, written in modern C++, OpenGL and Qt marks the attempt to classify low-level radar data in a similar fashion to Lidar and Camera images. After semi-automatic projection of the Lidar points into the camera image and assignment of the corresponding semantic classes, those points vertical projection if used to assign unique class labels to each range-azimuth cell of the radar cone. This work is by no means finished, as it turned out that annotating radar frequency plots is far more involved than initially anticipated. Also, the field of self-supervised learning seems to be a more natural fire for domains in which labeled data are scarce or just hard to come by. Nonetheless, the project contains many valid assumptions and showcases a systematic approach how to obtain annotated radar plots for the purpose of using them in the field of supevised learning.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2014/aaa/" rel="alternate" type="text/html" title="" /><published>2014-04-01T00:00:00+02:00</published><updated>2014-04-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2014/aaa</id><content type="html" xml:base="http://localhost:4000/blog/2014/aaa/">&lt;p&gt;This publication is the result of a research semester of mine at the &lt;a href=&quot;https://www.kth.se/en&quot;&gt;Royal
 Institute of Technology (KTH)&lt;/a&gt; within the &lt;a href=&quot;https://www.hallf.kth.se/en&quot;&gt;Department of
 Solid Mechanics&lt;/a&gt; back in 2014. It deals with the
 numerical contact calculation of stent deployments for the treatment of
