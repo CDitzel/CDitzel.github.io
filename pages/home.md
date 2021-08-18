@@ -16,7 +16,7 @@ find patterns and correlations without explicit annotations or manual human
 interference. This allows for the exploitation of an unprecedented amount of
 information and makes the environment perception for autonomous systems,
 especially in unfavorable conditions, more reliable.  <img
-src="/assets/img/rd_cam_points.png" align="left" width="400px"/> To obtain the
+src="/assets/img/rd_cam_points.png" align="left" width="500px"/> To obtain the
 sparse point cloud representation of discrete reflection centers that most
 experts are familiar with, conventional radar processing performs a series of
 laborious calculations depending on various estimates and prone to rejecting
