@@ -7,8 +7,11 @@ permalink: /
 ---
 
 {: .alert .alert-info}
-Project page for my latest paper [GENRADAR: SELF-SUPERVISED PROBABILISTIC CAMERA SYNTHESIS BASED
-ON RADAR FREQUENCIES](https://cditzel.github.io/GenRadar/) is up. Please let me know what you think.
+My paper [GenRadar: Self-supervised Probabilistic Camera Synthesis based on
+Radar
+Frequencies](https://ieeexplore.ieee.org/document/9570339/keywords#keywords) got
+accepted at [IEEE Access](https://ieeeaccess.ieee.org/). Have a look at the
+[project page](https://cditzel.github.io/GenRadar/) and let me know what you think.
 
 My passion is in the field of self-learning neural networks applied to low-level
 sensor data, particularly radar signals. The basic idea is to let the algorithms
