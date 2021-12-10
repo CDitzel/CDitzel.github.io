@@ -1,17 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-10-16T18:54:23+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CDitzel.github.io</title><entry><title type="html"></title><link href="http://localhost:4000/blog/2021/genradar/" rel="alternate" type="text/html" title="" /><published>2021-08-01T00:00:00+02:00</published><updated>2021-08-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2021/genradar</id><content type="html" xml:base="http://localhost:4000/blog/2021/genradar/">&lt;p&gt;&lt;a href=&quot;https://cditzel.github.io/GenRadar/&quot;&gt;This publication shows a way to probabilistically construct camera views
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-10T09:36:43+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CDitzel.github.io</title><entry><title type="html"></title><link href="http://localhost:4000/blog/2021/genradar/" rel="alternate" type="text/html" title="" /><published>2021-08-01T00:00:00+02:00</published><updated>2021-08-01T00:00:00+02:00</updated><id>http://localhost:4000/blog/2021/genradar</id><content type="html" xml:base="http://localhost:4000/blog/2021/genradar/">&lt;p&gt;&lt;a href=&quot;https://cditzel.github.io/GenRadar/&quot;&gt;This publication shows a way to probabilistically construct camera views
 based on nothing but but synchronized radar data. This allows to maintain a
 clear and informative impression of the environment for the control of
 autonomous systems and offers interesting possibilities for both application and
 academia.&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;If you intend to cite the paper, please use the following Bibtex entry&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@misc{ditzel2021genradar,
-      title={GenRadar: Self-supervised Probabilistic Camera Synthesis based on Radar Frequencies},
-      author={Carsten Ditzel and Klaus Dietmayer},
-      year={2021},
-      eprint={2107.08948},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@article{ditzel2021genradar,
+  title={GenRadar: Self-Supervised Probabilistic Camera Synthesis Based on Radar Frequencies},
+  author={Ditzel, Carsten and Dietmayer, Klaus},
+  journal={IEEE Access},
+  volume={9},
+  pages={148994--149042},
+  year={2021},
+  publisher={IEEE}
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>[&quot;Carsten Ditzel&quot;]</name></author><category term="Self-supervised Learning" /><category term="Sensor Fusion" /><summary type="html">This publication shows a way to probabilistically construct camera views based on nothing but but synchronized radar data. This allows to maintain a clear and informative impression of the environment for the control of autonomous systems and offers interesting possibilities for both application and academia.</summary></entry><entry><title type="html"></title><link href="http://localhost:4000/blog/2021/aduulm/" rel="alternate" type="text/html" title="" /><published>2021-02-19T00:00:00+01:00</published><updated>2021-02-19T00:00:00+01:00</updated><id>http://localhost:4000/blog/2021/aduulm</id><content type="html" xml:base="http://localhost:4000/blog/2021/aduulm/">&lt;p&gt;This &lt;a href=&quot;https://www.bmvc2020-conference.com/assets/papers/0474.pdf&quot;&gt;BMVC publication&lt;/a&gt;
 of my colleagues and me attempts to close the gap that existed for annotated
