@@ -1,20 +1,20 @@
 # SITE SETTINGS
-# title:                         # Title in top navigation bar (navbar) and <head>
-# description: Jekyll theme for research project websites # Site description in <head>
-# author: Carsten Ditzel                    # Used for copyright statement in footer
-# url: "https://peterdesmet.github.io"  # No slash at the end
+title: Carsten Ditzel                    # Title in top navigation bar (navbar) and <head>
+description: >-                         # Site description in <head> and search results
+  Carsten Ditzel: self-supervised deep learning on low-level radar data and
+  sensor fusion for robust environment perception in adverse weather.
+author: Carsten Ditzel                   # Used for copyright statement in footer
+url: "https://www.cditzel.com"          # No slash at the end
 # baseurl:                 # Only required if your site is on a subdomain e.g. https://username.github.io/sitename
                                         # which has url: "https://username.github.io" (no slash) and baseurl: "/sitename" (leading slash)
                                         # A baseurl affects internal links
 
 # SOCIAL PROFILES
 email: c.ditzel@gmail.com           # Social icon in footer
-twitter_username: CarstenDitzel           # Social icon in footer
 github_username: CDitzel         # Social icon in footer
 linkedin_username: carsten-ditzel
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 6                        # Show x number of latest posts on homepage, can be 0
-tweets_on_home: true                    # Show Twitter feed of twitter_username on homepage
 archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
 colors:
   # links: "#007bff"                      # Color for links: use a readable color that contrasts well with dark text
@@ -38,6 +38,7 @@ exclude:
   - package-lock.json
   - package.json
   - petridish.gemspec
+  - pages/about.md
 
 # FRONTMATTER DEFAULTS
 defaults:
@@ -52,3 +53,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: "google08bc5e20b6e9df28.html"
+    values:
+      sitemap: false

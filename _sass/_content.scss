@@ -75,14 +75,9 @@
     }
   }
 
-  // Style embedded content (video, Twitter feed)
+  // Style embedded content (video)
   iframe {
     margin-bottom: $headings-margin-bottom;
-  }
-
-  // Force Twitter timeline to remain in container
-  .twitter-timeline {
-    width: 100vw !important;
   }
 
   // Style tables

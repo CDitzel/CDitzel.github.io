@@ -1,7 +1,7 @@
 # Project team members listed below will appear on the /team page
 
 - name: Carsten Ditzel
-  role: Research scientist
+  role: "Software Engineer · Radar Perception & Automotive Security"
   image: assets/img/picture.jpg
   description: > # Can be Markdown
     I was born in the former German capital Bonn, Germany, in 1986. After my
@@ -19,8 +19,7 @@
     low-level multimodal sensor fusion for the reliable environment perception
     in adverse weather and compromised environmental circumstances.
     Please find my [CV](assets/img/cv.pdf) here for reference and contact me for further information.
-  orcid: https://orcid.org/0000-0002-5977-4401
+  orcid: 0000-0002-5977-4401
   email: c.ditzel@gmail.com
   github: CDitzel
-  twitter: CarstenDitzel
   linkedin: in/carsten-ditzel

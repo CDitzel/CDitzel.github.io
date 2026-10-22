@@ -2,14 +2,61 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Posts keep their title in `description`; `seo_title` overrides both,
+       `seo_description` sets the search snippet -->
+  {% assign page_title = page.seo_title | default: page.title | default: page.description | strip_html | strip %}
   {% if page.layout == 'home' %}
-    <title>{{ site.title }}</title>
-	{% else %}
-    <title>{{ page.title }} - {{ site.title }}</title>
+    {% assign full_title = site.title | append: ' - ' | append: page_title %}
+  {% elsif page_title != '' %}
+    {% assign full_title = page_title | append: ' - ' | append: site.title %}
+  {% else %}
+    {% assign full_title = site.title %}
   {% endif %}
 
-  <meta name="description" content="{{ site.description }}">
+  {% if page.seo_description %}
+    {% assign page_description = page.seo_description %}
+  {% elsif page.collection == 'posts' %}
+    {% assign page_description = page.excerpt | strip_html | normalize_whitespace | truncate: 160 %}
+  {% elsif page.layout == 'home' %}
+    {% assign page_description = site.description %}
+  {% else %}
+    {% assign page_description = page.description | default: site.description %}
+  {% endif %}
+  {% assign page_description = page_description | strip_html | normalize_whitespace %}
+
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <!-- Link previews -->
+  <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ full_title | escape }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.background %}
+  <meta property="og:image" content="{{ page.background | absolute_url }}">
+  {% endif %}
+
+  {% if page.layout == 'home' %}
+  {% assign me = site.data.team | first %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": {{ site.author | jsonify }},
+    "url": {{ '/' | absolute_url | jsonify }},
+    "image": {{ me.image | absolute_url | jsonify }},
+    "jobTitle": {{ me.role | jsonify }},
+    "sameAs": [
+      "https://github.com/{{ site.github_username }}",
+      "https://www.linkedin.com/in/{{ site.linkedin_username }}",
+      "https://orcid.org/{{ me.orcid }}"
+    ]
+  }
+  </script>
+  {% endif %}
 
   <!-- CSS -->
   <!-- Bootstrap is included in main.css -->
@@ -17,8 +64,10 @@
   <link rel="stylesheet" href="{{ '/assets/theme/css/font-awesome.min.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/theme/css/pygments.css' | relative_url }}">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <!-- Fonts: Lora for body text, Roboto for headings and navigation -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Feeds -->
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - RSS feed" href="{{ '/feed.xml' | absolute_url }}" >

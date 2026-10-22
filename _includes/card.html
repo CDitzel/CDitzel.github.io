@@ -9,18 +9,20 @@
 
   <div class="card-body position-relative">
     <h5 class="card-title">
-      <a class="stretched-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <a class="stretched-link" href="{{ post.url | relative_url }}">{{ post.title | default: post.description }}</a>
     </h5>
 
     <h6 class="card-subtitle">{{ post.date | date: "%B %d, %Y" }}</h6>
 
+    {% if post.title != '' %}
     <div class="card-text">
       {% if post.description %}
-        {{ post.description | markdownify | truncatewords: 20 }}
+        {{ post.description | markdownify | truncatewords: 20 }}
       {% else %}
         {{ post.excerpt | truncatewords: 20 }}
       {% endif %}
     </div>
+    {% endif %}
   </div>
 
   {% if post.categories and site.archive_permalink %}

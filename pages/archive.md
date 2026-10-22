@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: News
-description: News & blog posts
+title: Research
+description: Papers and project write-ups
 background: /assets/img/banner2.png
 permalink: /blog/
 ---
