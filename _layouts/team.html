@@ -12,13 +12,13 @@ description: Template for team page
       <h5 id="{{ member.name | strip | url_encode }}">
         {{ member.name }}
         {% if member.role %}
-        <small class="text-muted">| {{ member.role }}</small>
+        <small class="member-role">{{ member.role }}</small>
         {% endif %}
       </h5>
 
       {{ member.description | markdownify }}
 
-      <ul class="list-inline">
+      <ul class="list-inline member-links">
         {% if member.orcid %}
         <li class="list-inline-item">
           <a href="https://orcid.org/{{ member.orcid }}"><img class="orcid" src="{{ '/assets/theme/img/orcid.png' | relative_url }}"></a>

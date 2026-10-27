@@ -1,11 +1,21 @@
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-lg">
-        <ul class="list-inline">
+    <div class="row align-items-center">
+      <div class="col-md">
+        {% if site.author %}
+          <p class="footer-name">{{ site.author }}</p>
+        {% endif %}
+        {% assign me = site.data.team | first %}
+        {% if me.role %}
+          <p class="footer-role">{{ me.role }}</p>
+        {% endif %}
+      </div>
+
+      <div class="col-md text-md-right">
+        <ul class="list-inline mb-0">
           {% if site.email %}
             <li class="list-inline-item">
-              <a href="mailto:{{ site.email }}">
+              <a href="mailto:{{ site.email }}" title="Email">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
@@ -13,22 +23,19 @@
               </a>
             </li>
           {% endif %}
-
-
-			{% if site.linkedin_username %}
+          {% if site.linkedin_username %}
             <li class="list-inline-item">
-              <a href="https://linkedin.com/in/carsten-ditzel">
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
-			{% endif %}
-
+          {% endif %}
           {% if site.github_username %}
             <li class="list-inline-item">
-              <a href="https://github.com/{{ site.github_username }}">
+              <a href="https://github.com/{{ site.github_username }}" title="GitHub">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -60,7 +67,7 @@
 
     <div class="small mt-2">
       {% if site.author %}
-        <!-- <p>© {{ site.author }}</p> -->
+        <p>© {{ 'now' | date: "%Y" }} {{ site.author }}</p>
       {% endif %}
       {% if site.data.footer.license %}
         {{ site.data.footer.license | markdownify }}

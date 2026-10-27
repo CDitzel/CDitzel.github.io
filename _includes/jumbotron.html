@@ -1,5 +1,5 @@
 {% if page.background %}
-  <header class="jumbotron bg-image" style="background-image: url('{{ page.background | relative_url }}')">
+  <header class="jumbotron bg-image{% if page.layout == 'home' %} home-hero{% endif %}" style="background-image: url('{{ page.background | relative_url }}')">
 {% else %}
   <header class="jumbotron bg-no-image">
 {% endif %}
@@ -9,6 +9,13 @@
           <h1{% if page.layout == 'home' %} class="home"{% endif %}>{{ page.title }}</h1>
 
           <div class="lead">{{ page.description | markdownify }}</div>
+
+          {% if page.layout == 'home' %}
+          <div class="hero-actions">
+            <a class="btn btn-light btn-lg" href="{{ site.archive_permalink | relative_url }}">Research &amp; publications</a>
+            <a class="btn btn-outline-light btn-lg" href="mailto:{{ site.email }}">Get in touch</a>
+          </div>
+          {% endif %}
 
           {% if page.date %}
           <p class="meta">

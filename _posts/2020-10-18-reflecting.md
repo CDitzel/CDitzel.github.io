@@ -1,7 +1,8 @@
 ---
 title: ""
 description: "Reflecting Objects: Which objects in the scene explain the radio frequency spectrum?"
-background: /assets/img/refobjs-min.png
+background: /assets/img/web/refobjs-banner.jpg
+thumbnail: /assets/img/web/refobjs-card.jpg
 author: [Carsten Ditzel]
 categories: [Self-supervised Learning, Sensor Fusion]
 ---
@@ -59,7 +60,7 @@ individual sensor processing chain.
 
 ### Minimal processing of data retains valuable information
 Only a minimum of preprocessing is performed on the data to retain as much information as possible inherent in the signals
-![](/assets/img/data_repr.gif )
+![](/assets/img/web/data_repr.webp){: loading="lazy"}
 
 ### Crossmodal correspondence learning
 The basic idea is to employ time-synchronized streams of two orthogonal sensor
@@ -68,7 +69,7 @@ for the mathematically consistent formulation of an auxiliary task which is
 attempted to be solved by the neural network in order to facilitate
 backpropagation and enable the learning process.
 
-![](/assets/img/architecture.gif)
+![](/assets/img/web/architecture.webp){: loading="lazy"}
 
 The network is presented with temporally aligned and misaligned pairs of camera
 and radar samples alternatingly. Upon transformation by means of two individual
@@ -78,12 +79,12 @@ between disparate sample pairs is to be increased simultaneously. This causes
 the network to learn semantically meaningful representations of one and the same
 real-world scene originating from orthogonal physical measurement principles.
 
-![](/assets/img/local_outside.png)
+![](/assets/img/web/local_outside.jpg){: loading="lazy"}
 
 The ultimate goal is to reveal areas within the camera image which are most
 likely to be the source of electromagnetic reflections thus establishing a close
 correspondence between both modalities which can then be used further for
 safety-relevant applications downstream.
 
-![](/assets/img/res1.gif)
-![](/assets/img/res2.gif)
+![](/assets/img/web/res1.webp){: loading="lazy"}
+![](/assets/img/web/res2.webp){: loading="lazy"}

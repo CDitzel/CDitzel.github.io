@@ -15,6 +15,7 @@ remark: See also page.layout == 'home' in head.html and jumbotron.html
     </div>
     
   {% if site.posts_on_home > 0 %}
+    <h2>Projects</h2>
     <div class="row cards mt-4">
     {% for post in site.posts limit:site.posts_on_home %}
       <div class="col-md-6">

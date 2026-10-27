@@ -1,7 +1,8 @@
 <div class="card" data-categories="{% for category in post.categories %}{{ category | downcase | strip }}|{% endfor %}">
   <a href="{{ post.url | relative_url }}">
-    {% if post.background %}
-      <img class="card-img-top" src="{{ post.background | relative_url }}">
+    {% assign card_image = post.thumbnail | default: post.background %}
+    {% if card_image %}
+      <img class="card-img-top" src="{{ card_image | relative_url }}" alt="" loading="lazy">
     {% else %}
       <div class="card-img-top bg-secondary"></div>
     {% endif %}

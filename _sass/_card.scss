@@ -10,16 +10,52 @@
 }
 
 .card {
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px $shadow-color, 0 6px 18px $shadow-color;
   margin-bottom: $grid-gutter-width;
   min-width: 100%; // Use allowed width even if content is smaller
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0 10px 30px rgba($navy, 0.14);
+    transform: translateY(-3px);
+  }
+
+  // Image link: clip the hover zoom
+  & > a {
+    display: block;
+    overflow: hidden;
+  }
 
   .card-img-top {
+    border-radius: 0;
     height: 150px;
     object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  &:hover .card-img-top {
+    transform: scale(1.04);
+  }
+
+  .card-title {
+    font-size: 1.05rem;
+    line-height: 1.4;
+
+    a {
+      color: $navy;
+    }
+  }
+
+  &:hover .card-title a {
+    color: $link-color;
   }
 
   .card-subtitle {
     color: $gray-600;
+    font-size: 0.85rem;
     margin-bottom: 0.5rem;
   }
 
@@ -33,14 +69,32 @@
 
     // Smaller badge then the one defined in _jumbotron.scss
     .badge {
-      border: 1px solid $link-color;
+      background: rgba($link-color, 0.1);
+      border: 0;
+      color: $link-color;
       font-family: $font-family-base;
+      font-size: 0.7rem;
+      letter-spacing: 0.03em;
+      padding: 0.4em 0.8em;
       text-transform: uppercase;
 
       &:hover,
       &:focus {
-        border: 1px solid $link-hover-color;
+        background: $link-color;
+        color: $white;
       }
     }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card .card-img-top {
+    transition: none;
+  }
+
+  .card:hover,
+  .card:hover .card-img-top {
+    transform: none;
   }
 }

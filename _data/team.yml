@@ -2,22 +2,30 @@
 
 - name: Carsten Ditzel
   role: "Software Engineer · Radar Perception & Automotive Security"
-  image: assets/img/picture.jpg
+  image: assets/img/web/cd-bio.jpg
   description: > # Can be Markdown
-    I was born in the former German capital Bonn, Germany, in 1986. After my
-    Abitur (High School diploma) in 2005, I worked for one year as a volunteer on the cancer ward of
-    the Asklepios children's hospital in Sankt Augustin, Germany. Afterwards I studied
-    mechatronic engineering and received the Diploma degree (equivalent to
-    M.Sc. degree) from the University of Applied Sciences Bonn-Rhein-Sieg,
-    Germany, in 2010. Having discovered my passion for mathematical simulation
-    and numerical optimization, I subsequently enrolled in a computational
-    engineering Masters's programme at the University of Hanover, Germany. In
-    2015 I graduated with honors and in 2016 became a research assistant and
-    Ph.D. candidate at the Institute of Measurement, Control and
-    Microtechnology, School of Engineering and Computer Science, at Ulm
-    University. Here my passion and focus of research is in the field of
-    low-level multimodal sensor fusion for the reliable environment perception
-    in adverse weather and compromised environmental circumstances.
+    I am a software engineer working on radar perception and automotive
+    security, based in Ulm, Germany.
+
+
+    I studied mechatronics at Bonn-Rhein-Sieg University of Applied Sciences
+    (Dipl.-Ing. (FH), 2010) and computational engineering at Leibniz University
+    Hannover, where I graduated with honors in 2015 after a research semester at
+    KTH Stockholm. I then joined the Institute of Measurement, Control and
+    Microtechnology at Ulm University as a research associate. My doctoral
+    research focused on low-level radar–camera fusion with self-supervised deep
+    learning for reliable environment perception in adverse weather.
+
+
+    Since late 2021 I have been working in industry on radar perception for
+    automated driving. I took a probabilistic radar grid from a CPU prototype to
+    a real-time CUDA implementation that now runs in series production vehicles,
+    and co-developed a deep-learning model that detects obstacles and occupancy
+    around the vehicle. Today I work on embedded and automotive security, from
+    cryptographic key provisioning to secure vehicle communication and
+    diagnostics.
+
+
     Please contact me for further information.
   orcid: 0000-0002-5977-4401
   email: c.ditzel@gmail.com

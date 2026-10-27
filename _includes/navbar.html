@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-nav">
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="main-nav">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="{{'/' | relative_url }}">
       {% if site.logo %}
@@ -7,39 +7,38 @@
       {{ site.title }}
     </a>
 
- {% if site.email %}
-            <li class="list-inline-item">
-              <a href="mailto:{{ site.email }}">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          {% endif %}
-
-	{% if site.linkedin_username %}
-            <li class="list-inline-item">
-              <a href="https://linkedin.com/in/carsten-ditzel">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-			{% endif %}
-
-          {% if site.github_username %}
-            <li class="list-inline-item">
-              <a href="https://github.com/{{ site.github_username }}">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          {% endif %}
-
+    <ul class="list-inline nav-social mb-0 d-none d-sm-block">
+      {% if site.email %}
+        <li class="list-inline-item">
+          <a href="mailto:{{ site.email }}" title="Email">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      {% endif %}
+      {% if site.linkedin_username %}
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" title="LinkedIn">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      {% endif %}
+      {% if site.github_username %}
+        <li class="list-inline-item">
+          <a href="https://github.com/{{ site.github_username }}" title="GitHub">
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+        </li>
+      {% endif %}
+    </ul>
 
     {% if site.data.navigation %}
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">

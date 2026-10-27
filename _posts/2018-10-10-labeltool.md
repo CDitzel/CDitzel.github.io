@@ -2,6 +2,7 @@
 title: ""
 description: "Tesseract - A multimodal semi-automatic sensor data annotation tool for supervised learning"
 background: /assets/img/labeltool.png
+thumbnail: /assets/img/web/labeltool-card.jpg
 author: [Carsten Ditzel]
 categories: [Sensor Fusion, Semantic Segmentation]
 ---

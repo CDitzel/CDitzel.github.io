@@ -16,7 +16,7 @@
 
   // Overlay
   &.bg-image:before {
-    background-image: linear-gradient(rgba(theme-color("dark"), 0.1), rgba(theme-color("dark"), 0.9));
+    background-image: linear-gradient(rgba($navy, 0.55), rgba($navy, 0.88));
     content: "";
     left: 0;
     height: 100%;
@@ -33,21 +33,49 @@
   
   h1 {
     $jumbotron-h1: 3.5rem;
+    color: $white;
     font-size: $jumbotron-h1;
     font-weight: 800;
+    letter-spacing: -0.015em;
 
-    // Reduce font-size on smaller screens, except on homepage
+    // Reduce font-size on smaller screens
     @include media-breakpoint-down(md) {
       font-size: $jumbotron-h1 - 1;
-
-      &.home {
-        font-size: $jumbotron-h1;
-      }
     }
   }
 
   .lead {
     font-size: ($lead-font-size * 1.2);
+  }
+
+  // Home page: taller banner with two buttons
+  &.home-hero {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+  }
+
+  .hero-actions {
+    margin-top: 2rem;
+
+    .btn {
+      border-radius: 2rem;
+      font-weight: 500;
+      margin: 0.25rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .btn-light,
+    .btn-light:hover,
+    .btn-light:visited,
+    .btn-outline-light:hover {
+      color: $navy;
+    }
   }
 
   .meta {

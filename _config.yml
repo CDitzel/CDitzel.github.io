@@ -1,8 +1,9 @@
 # SITE SETTINGS
 title: Carsten Ditzel                    # Title in top navigation bar (navbar) and <head>
 description: >-                         # Site description in <head> and search results
-  Carsten Ditzel: self-supervised deep learning on low-level radar data and
-  sensor fusion for robust environment perception in adverse weather.
+  Carsten Ditzel: software engineer for radar perception and automotive
+  security, from real-time radar processing and deep learning on low-level
+  sensor data to secure embedded systems.
 author: Carsten Ditzel                   # Used for copyright statement in footer
 url: "https://www.cditzel.com"          # No slash at the end
 # baseurl:                 # Only required if your site is on a subdomain e.g. https://username.github.io/sitename
@@ -17,10 +18,9 @@ linkedin_username: carsten-ditzel
 posts_on_home: 6                        # Show x number of latest posts on homepage, can be 0
 archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories
 colors:
-  # links: "#007bff"                      # Color for links: use a readable color that contrasts well with dark text
-  links: "#00A5C6"                      # Color for links: use a readable color that contrasts well with dark text
-  banner: "#007bff"                     # Background color for page banners: use color that contrasts well with white
-  footer: "#6c757d"                     # Background color for footer: use color that contrasts well with white
+  links: "#007A94"                      # Color for links: teal, 5:1 contrast on white
+  banner: "#0f1c2e"                     # Background color for page banners: use color that contrasts well with white
+  footer: "#0f1c2e"                     # Background color for footer: use color that contrasts well with white
 rounded_corners: true                   # Enable (default) rounded corners on boxes and buttons
 
 # BUILD SETTINGS

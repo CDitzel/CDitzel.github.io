@@ -1,11 +1,15 @@
 // Navbar
 
 .navbar {
-  background-color: white!important;
+  background-color: rgba($white, 0.92) !important;
+  backdrop-filter: saturate(180%) blur(8px);
   border-bottom: 1px solid $gray-200;
+  box-shadow: 0 1px 12px rgba($navy, 0.06);
 
   .navbar-brand {
+    color: $navy;
     font-weight: bold;
+    letter-spacing: -0.01em;
     img {
       height: 30px;
     }
@@ -23,5 +27,32 @@
     font-size: 90%;
     padding: 10px;
     text-transform: uppercase;
+  }
+
+  // Contact icons next to the name: smaller and muted, so the menu stands out
+  .nav-social {
+    margin-left: 0.75rem;
+    margin-right: auto;
+
+    a {
+      color: $gray-500;
+
+      &:hover,
+      &:focus {
+        color: $link-color;
+      }
+    }
+  }
+}
+
+// Menu links: darker and slightly bolder than Bootstrap's pale default
+.navbar-light .navbar-nav .nav-link {
+  color: $gray-800;
+  font-weight: 500;
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $link-color;
   }
 }

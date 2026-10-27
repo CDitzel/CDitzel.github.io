@@ -1,10 +1,46 @@
 ---
 layout: home
-title: Sensor data fusion
-description: Robust environment perception in adverse weather
-background: /assets/img/dl.png
+title: Radar perception & automotive security
+description: Real-time radar processing, deep learning on low-level sensor data and secure embedded systems
+background: /assets/img/web/banner2-banner.jpg
 permalink: /
 ---
+
+{: .lead}
+I am a software engineer working on radar perception and automotive security.
+During my doctoral research at Ulm University I developed self-supervised deep
+learning methods that fuse low-level radar data with camera images. Since then I
+have been bringing radar and deep learning into series production vehicles, from
+a probabilistic radar grid running in real time on an embedded GPU to a
+deep-learning model that detects obstacles and occupancy around the vehicle.
+Today I work on embedded and automotive security: cryptographic key
+provisioning, secure vehicle communication and diagnostics.
+
+<div class="highlights row">
+  <div class="col-md-4">
+    <div class="highlight">
+      <i class="fa fa-bullseye" aria-hidden="true"></i>
+      <h3>Radar perception</h3>
+      <p>Ten years of radar signal processing and deep learning on low-level radar data.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="highlight">
+      <i class="fa fa-microchip" aria-hidden="true"></i>
+      <h3>Real-time embedded</h3>
+      <p>CUDA on embedded GPUs, from the first prototype to series production.</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="highlight">
+      <i class="fa fa-shield" aria-hidden="true"></i>
+      <h3>Automotive security</h3>
+      <p>Key provisioning, secure vehicle communication and diagnostics.</p>
+    </div>
+  </div>
+</div>
+
+## Research
 
 My passion is in the field of self-learning neural networks applied to low-level
 sensor data, particularly radar signals. The basic idea is to let the algorithms
