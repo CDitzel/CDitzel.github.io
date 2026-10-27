@@ -9,6 +9,9 @@
         {% if me.role %}
           <p class="footer-role">{{ me.role }}</p>
         {% endif %}
+        {% if site.email %}
+          <p class="footer-mail"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        {% endif %}
       </div>
 
       <div class="col-md text-md-right">

@@ -49,11 +49,6 @@
     }
   }
 
-  .orcid {
-    height: 18px;
-    width: 18px;
-  }
-
   // Photo above the text on phones
   @include media-breakpoint-down(sm) {
     flex-direction: column;

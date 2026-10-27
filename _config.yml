@@ -13,7 +13,7 @@ url: "https://www.cditzel.com"          # No slash at the end
 # SOCIAL PROFILES
 email: c.ditzel@gmail.com           # Social icon in footer
 github_username: CDitzel         # Social icon in footer
-linkedin_username: carsten-ditzel
+linkedin_username: carsten-ditzel-7679a7377
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 6                        # Show x number of latest posts on homepage, can be 0
 archive_permalink: /blog/               # Permalink of page using archive.html layout, required when using post categories

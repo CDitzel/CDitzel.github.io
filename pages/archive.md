@@ -24,6 +24,4 @@ permalink: /blog/
   Stockholm, 2014.
   [PDF](/assets/img/aaa_paper_ditzel.pdf)
 
-All publications are also listed on [ORCID](https://orcid.org/0000-0002-5977-4401).
-
 ## Projects
